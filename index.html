@@ -1,12 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hello World</title>
+  <title>Soy Ana, Web Developer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/front-cover.css">
+  <script defer src="js/nav.js"></script>
+
 </head>
+
 <body>
-  <p>Hello World</p>
+  <header class="topheader">
+    <nav class="topnav">
+      <a href="#" class="logo">
+        <img class="logo__img" height="50" width="43" src="img/foto-logo.png" alt="Ana Web Developer">
+        <div>
+          <span class="logo__name">Ana</span><br>
+          Web Developer
+        </div>
+      </a>
+      
+      <button class="menu--open" aria-label="Abrir Menú">
+        <img src="img/menu.svg" alt="abrir menú">
+      </button>
+      <ul class="menu menu--opener">
+        <button class="menu--close" aria-label="Cerrar Menú">
+          <img src="img/close-icon.svg" alt="cerrar menú">
+        </button>
+  <!--  <li><a href="#home" class="menu__link">Home</a></li> -->
+        <li><a href="#skills" class="menu__link">Mis habilidades</a></li>
+        <li><a href="#about" class="menu__link">Acerca de mí</a></li>
+        <li><a href="#services" class="menu__link">Servicios</a></li>
+        <li><a href="#portfolio" class="menu__link">Mi Portafolio</a></li>
+        <li><a href="#contact" class="menu__link">Contacto</a></li>
+      </ul>      
+    </nav>
+  </header>
+  
+  <section class="front-cover">
+    <div class="portrait">
+      
+      <img class="portrait__background" src="img/vector.svg"">
+      <img class="portrait__picture" src="img/photo-mobile.png"" alt="Ana Web Developer">
+    </div>
+    <div class="top-area">
+      <div class="headlines">
+        <h1><span class="headlines__greeting">Hola, soy Ana</span><br />UX/UI<br />Designer</h1>
+      </div>
+      <div class="social">
+        <a class="social__linkedin" href="#">
+          <img src="img/cib_linkedin-in.svg" alt="linkedin">
+        </a>
+        <a class="social__instagram" href="#">
+          <img src="img/instagram.svg" alt="instagram">
+        </a>
+        <a class="social__twitter" href="#">
+          <img src="img/twitter.svg" alt="twitter">
+        </a>
+      </div>
+      <div class="mail-btn">
+        <img class="mail-btn__icon" src="img/mail.svg" alt="mail">
+        <span class="mail-btn__call">Contáctame</span>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="skills">
+    <h2>HABILIDADES</h2>
+  </section>
+    
+
+  <section class="about">
+    <h2>ACERCA DE MÍ</h2>
+  </section>
+
+
+  <section class="services">
+    <h2>SERVICIOS</h2>
+  </section>
+
+
+  <section class="portfolio">
+    <h2>MI PORTAFOLIO</h2>
+  </section>
+
+
+  <section class="contact">
+    <h2>CONTACTO</h2>
+  </section>
+
+
 </body>
+
 </html>
