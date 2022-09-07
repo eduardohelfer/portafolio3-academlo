@@ -46,6 +46,11 @@
 
 }
 
+.headlines__greeting {
+  font-size: 32px;
+  color: var(--secondary-color);
+}
+
 .social {
   margin: 2rem 0;
   display: flex;
