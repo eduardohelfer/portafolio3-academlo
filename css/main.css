@@ -41,3 +41,11 @@ p {
   font-weight 500;
   line-height: 2rem;
 }
+
+@media (max-width: 760px) {
+
+  .services-container{
+    justify-content: center;
+  }
+
+}

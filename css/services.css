@@ -14,7 +14,7 @@
 }
 
 .service-box {
-  min-width:  170px;
+  min-width:  180px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -57,4 +57,12 @@
   font-size: 0.8rem;
   line-height: 1rem;
   text-align: center;
+}
+
+@media (max-width: 780px) {
+
+  .services-container{
+    justify-content: space-evenly;
+  }
+
 }
