@@ -2,6 +2,7 @@
   margin-top: 100px;
   max-width: 1024px;
   margin: 0 auto;
+  padding: 5rem 0 2rem;
 }
 
 .portfolio-container{
@@ -10,3 +11,25 @@
   justify-content: space-between;
   flex-wrap: wrap;
 }
+
+.portfolio-box {
+  min-width:  220px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: var(--highlight2-color);
+  color: var(--text-color-inverse);
+}
+
+  .portfolio-image {
+    height: 170px;
+  }
+
+  .portfolio-item {
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 0.4rem;
+    color: var(--text-color);
+    margin-left: 0.5rem;
+  }

@@ -6,6 +6,7 @@
   flex-wrap: wrap;
   max-width: 1024px;
   margin: 0 auto;
+  padding: 5rem 0 2rem;
 }
 
 .portrait {
@@ -96,7 +97,7 @@
 
 .mail-btn {
   background-color: var(--secondary-color);
-  color: var(--highlight1-color);
+  color: var(--highlight2-color);
   font-weight: 700;
   font-size: 20px;
   padding: 0.7rem 3rem;
@@ -113,7 +114,7 @@
 }
 
 .mail-btn__icon {
-  color: var(--highlight1-color);
+  color: var(--highlight2-color);
   height: 28px;
   padding-right: 1.5rem;
 }

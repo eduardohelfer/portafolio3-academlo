@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="academlo icon" href="favicon.ico" type="image/x-icon">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Soy Ana, Web Developer</title>
 
@@ -19,7 +20,8 @@
   <link rel="stylesheet" href="css/services.css">
   <link rel="stylesheet" href="css/portfolio.css">
   <link rel="stylesheet" href="css/contact.css">
-  <script defer src="js/nav.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" defer></script>
+  <script defer src="js/nav.js" difer></script>
 
 </head>
 
@@ -36,10 +38,12 @@
       
       <button class="menu--open" aria-label="Abrir Menú">
         <img src="img/menu.svg" alt="abrir menú">
+        <!--<i class='bx bx-menu'></i>-->
       </button>
       <ul class="menu menu--opener">
         <button class="menu--close" aria-label="Cerrar Menú">
           <img src="img/close-icon.svg" alt="cerrar menú">
+          
         </button>
   <!--  <li><a href="#home" class="menu__link">Home</a></li> -->
         <li><a href="#skills" class="menu__link">Mis habilidades</a></li>
@@ -51,7 +55,7 @@
     </nav>
   </header>
   
-  <section class="front-cover">
+  <section class="front-cover" id="front-cover">
     <div class="portrait">
       
       <img class="portrait__background" src="img/vector.svg"">
@@ -62,25 +66,25 @@
         <h1><span class="headlines__greeting">Hola, soy Ana</span><br />UX/UI<br />Designer</h1>
       </div>
       <div class="social">
-        <a class="social__linkedin" href="#">
+        <a href="#" class="social__linkedin" href="#">
           <img src="img/cib_linkedin-in.svg" alt="linkedin">
         </a>
-        <a class="social__instagram" href="#">
+        <a href="#" class="social__instagram" href="#">
           <img src="img/instagram.svg" alt="instagram">
         </a>
-        <a class="social__twitter" href="#">
+        <a href="#" class="social__twitter" href="#">
           <img src="img/twitter.svg" alt="twitter">
         </a>
       </div>
-      <div class="mail-btn">
+      <a href="#" class="mail-btn">
         <img class="mail-btn__icon" src="img/mail.svg" alt="mail">
         <span class="mail-btn__call">Contáctame</span>
-      </div>
+      </a>
     </div>
   </section>
 
 
-  <section class="skills">
+  <section class="skills" id="skills">
     <h2>HABILIDADES</h2>
     <div class="rates-container">
       <div class="rate-box">
@@ -114,42 +118,130 @@
   </section>
     
 
-  <section class="about">
+  <section class="about" id="about">
     <h2>ACERCA DE MÍ</h2>
     <p>Desarrolladora Full Stack en formación con conocimientos en HTML,CSS y JavaScript.  Soy una persona a la que le gusta reinventarse constantemente en busca de alcanzar un mejor desempeño.
     </p>
     <p>Mi perfil está orientado allogro, la proactividad, la resolución de problemas y un espíritu de aprendizaje constante.  He encontrado una gran pasión por el desarrollo web y la implementación de aplicaciones que busquen suplir las necesidades sociales.<br />
       Busco oportunidades que me permitan aprender cada día a través de retos, trabajar en equipo e implementar mis conocimientos para el bien común.
     </p>
+
     <div class="about-container">
-      <div class="about-box"><img src="img/image9.png" class="about-logo-img" alt="UVM">
+
+      <div class="about-box">
+        <img src="img/image9.png" class="about-logo-img" alt="UVM">
         <p class="about-school">UVM</p>
         <p class="about-years">2010 - 2014</p>
       </div>
       <div class="about-box">
-        <div class="about-box"><img src="img/logo_academlo5.png" class="about-logo-img" alt="UVM">
+        <div class="about-box">
+          <img src="img/logo_academlo5.png" class="about-logo-img" alt="UVM">
           <p class="about-school">Academlo</p>
           <p class="about-years">2020 - 2021</p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="services" id="services">
+    <h2>SERVICIOS</h2>
+    <div class="services-container">
+      
+      <div class="service-box">
+        
+        <div class="service-iconbox">
+          <div class="service-icon-square">
+            <img src="icons/pencil.svg" alt="Web Design" class="service-icon">
+          </div>
+          <p class="service-name">Web Design</p>
+          <p class="service-description">Diseño responsivo, con criterio estético, intuitivo y de ergonomía.</p>
+        </div>
+      </div>
+
+      <div class="service-box">
+        <div class="service-iconbox">
+          <div class="service-icon-square">
+            <img src="icons/web.svg" alt="Web Design" class="service-icon">
+          </div>
+          <p class="service-name">Desarrollo Web</p>
+          <p class="service-description">Desde diseño hasta implementación del desarrollo.</p>
+        </div>  
+      </div>
+      
+      <div class="service-box">
+        <div class="service-iconbox">
+          <div class="service-icon-square">
+            <img src="icons/search.svg" alt="Web Design" class="service-icon">
+          </div>
+          <p class="service-name">Research</p>
+          <p class="service-description">Desde diseño hasta implementación del desarrollo.</p>
+        </div>  
+      </div>
+
+            
+      <div class="service-box">
+        <div class="service-iconbox">
+          <div class="service-icon-square">
+            <img src="icons/speakerphone.svg" alt="Web Design" class="service-icon">
+          </div>
+          <p class="service-name">Marketing</p>
+          <p class="service-description">Desde diseño hasta implementación del desarrollo.</p>
+        </div>  
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="portfolio" id="portfolio">
+    <h2>MI PORTAFOLIO</h2>
+
+    <div class="portfolio-container">
+
+      <div class="portfolio-box">
+        <img src="img/image9-1.png" class="portfolio-image" alt="Beauty app">
+        <p class="portfolio-item">Beauty app</p>
+      </div>
+
+      <div class="portfolio-box">
+        <img src="img/image10.png" class="portfolio-image" alt="Training app">
+        <p class="portfolio-item">Training app</p>
+      </div>
+      
+      <div class="portfolio-box">
+        <img src="img/rectangle58.png" class="portfolio-image" alt="Management Web">
+        <p class="portfolio-item">Management Web</p>
+      </div>
+      
+      <div class="portfolio-box">
+        <img src="img/image11.png" class="portfolio-image" alt="Management Web">
+        <p class="portfolio-item">Management Web</p>
       </div>
     </div>
   </section>
 
 
-  <section class="services">
-    <h2>SERVICIOS</h2>
-  </section>
-
-
-  <section class="portfolio">
-    <h2>MI PORTAFOLIO</h2>
-  </section>
-
-
-  <section class="contact">
+  <section class="contact" id="contact">
     <h2>CONTACTO</h2>
+    <div class="contact-container">
+      <div class="contact-box">
+        <img src="img/phone.svg" class="contact-icon" alt="UVM">
+        <p class="contact-means">Número celular</p>
+        <p class="contact-details">+99 555112358</p>
+      </div>
+      <div class="contact-box">
+        <img src="img/mail2.svg" class="contact-icon" alt="UVM">
+        <p class="contact-means">Email</p>
+        <p class="contact-details">ana501@falsemail.com</p>
+      </div>
+    </div>
   </section>
 
-
+  <footer>
+    <br><br><br>
+    <p class="final-line">Hecho con ❤ en Acdemlo</p>
+  </footer>
 </body>
 
 </html>
