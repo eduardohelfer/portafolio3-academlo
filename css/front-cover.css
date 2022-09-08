@@ -20,7 +20,6 @@
 .portrait__picture {
   width: 310px;
   margin-left: 70px;
-  z-index: -1;
 }
 
 .portrait__background {

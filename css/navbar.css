@@ -1,12 +1,11 @@
 .topheader {
-  
   box-shadow: 0 3px 3px rgba(106, 106, 106, 0.3);
   background-color: var(--theme-color);
   position: fixed;
   left: 0;
   top: 0;
   width: 100%;
- 
+  z-index: 1;
 }
 
 .topnav {
@@ -96,7 +95,7 @@
 
 .menu__link.selected::after,
 .menu__link:hover::after {
-  opacity: 0.8;
+  opacity: 1;
 }
 
 .menu--close,
@@ -129,10 +128,12 @@
 }
 
 .menu__link {
-  color: var(--highlight1-color);
-  font-size: 16px;
+  color: var(--highlight2-color);
+  font-size: 22px;
   font-weight: 500;
   line-height: 60px;
+  width: 350px;
+  border: var(--highlight2-color) 2px solid;
 }
 
 .menu__link:hover {
@@ -147,14 +148,15 @@
 .menu--close {
   align-self: flex-end;
   border: none;
-  background: none;
+  background: var(--text-color);
   cursor: pointer;
   padding: 20px 15px;
 }
 
 .menu--opener {
-  opacity: 1;
+  opacity: 0.9;
   pointer-events: all;
+  z-index: 9;
 }
 
 menu--close:focus:not(:focus-visible),
