@@ -105,62 +105,66 @@
 
 
 @media (max-width: 950px) {
-/* Menu */
+    /* Menu */
 
-.menu {
-  flex-direction: column;
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  align-items: center;
-  background-color: var(--menu-mobile-bgcolor);
-  height: 100%;
-  overflow-y: auto;
-  opacity: 0;
-  pointer-events: none;
-}
+    .menu {
+      flex-direction: column;
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      align-items: center;
+      background-color: var(--menu-mobile-bgcolor);
+      height: 100%;
+      overflow-y: auto;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s;
+    }
 
-.menu li {
-  padding: 12px;
-  white-space: nowrap;
+    .menu li {
+      padding: 12px;
+      white-space: nowrap;
 
-}
+    }
 
-.menu__link {
-  color: var(--highlight2-color);
-  font-size: 22px;
-  font-weight: 500;
-  line-height: 60px;
-  width: 350px;
-  border: var(--highlight2-color) 2px solid;
-}
+    .menu__link {
+      color: var(--highlight2-color);
+      font-size: 22px;
+      font-weight: 500;
+      line-height: 60px;
+      width: 350px;
+      border: var(--highlight2-color) 2px solid;
+    }
 
-.menu__link:hover {
-  color: var(--primary-color);
-}
+    .menu__link:hover {
+      color: var(--primary-color);
+    }
 
-.menu--close,
-.menu--open {
-  display: block;
-}
+    .menu--close,
+    .menu--open {
+      display: block;
+      border: none;
+      background: none;
+      cursor: pointer;
+    }
 
-.menu--close {
-  align-self: flex-end;
-  border: none;
-  background: var(--text-color);
-  cursor: pointer;
-  padding: 20px 15px;
-}
+    .menu--close {
+      align-self: flex-end;
+      border: none;
+      background: var(--text-color);
+      cursor: pointer;
+      padding: 20px 15px;
+    }
 
-.menu--opener {
-  opacity: 0.9;
-  pointer-events: all;
-  z-index: 9;
-}
+    .menu--opener {
+      opacity: 0.9;
+      pointer-events: all;
+      z-index: 9;
+    }
 
-menu--close:focus:not(:focus-visible),
-menu--open:focus:not(:focus-visible) {
- outline: none; 
-}
+    menu--close:focus:not(:focus-visible),
+    menu--open:focus:not(:focus-visible) {
+    outline: none; 
+    }
 }
